@@ -3,7 +3,7 @@
 > 
 This is a basic clone of an old apple welcome page. which I managed to clone it using pure HTML and CSS, and I named it appleClone.
 
-![screenshot]("to be added later")
+![screenshot](./Screenshot.png)
 
 ## Built With
 
@@ -12,7 +12,7 @@ This is a basic clone of an old apple welcome page. which I managed to clone it 
 
 ## Live Demo
 
-[Live Demo Link]("to be added later")
+[Live Demo Link](https://raw.githack.com/elmejdki/appleClone/create-main-page/index.html)
 
 
 ## Getting Started
