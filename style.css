@@ -1,3 +1,58 @@
-.main {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  background-image: url("https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 100;
+}
+
+.hero h1 {
   font-size: 50px;
+  line-height: 80px;
+  font-weight: 100;
+}
+
+.hero p {
+  font-size: 30px;
+  width: 800px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.hero :last-child {
+  font-size: 23px;
+}
+
+.hero :last-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.player-icon {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-left: 5px;
+  background-image: url("https://citywinery.com/static/version1578397087/frontend/Magento/citywinery/en_US/images/play-button.png");
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  background-position: center;
+  background-size: contain;
 }
