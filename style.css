@@ -50,10 +50,12 @@ nav li {
   flex: 1;
   width: 100px;
   height: 100%;
+  border-right: 1px solid #565656;
 }
 
 nav ul :last-child {
-  flex: 1;
+  flex: 2;
+  border-right: none;
 }
 
 .hero :last-child {
@@ -79,8 +81,8 @@ nav li:first-child {
 }
 
 .player-icon {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   top: 10px;
   margin-left: 5px;
   background-image: url("https://citywinery.com/static/version1578397087/frontend/Magento/citywinery/en_US/images/play-button.png");
@@ -137,4 +139,37 @@ nav li:hover {
 
 nav ul form {
   position: relative;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features > * {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 200px;
+  width: calc(25% - 4px);
+  margin: 2px;
+}
+
+.forward-thinking {
+  background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s_2x.jpg");
+}
+
+.colorful {
+  background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5c_2x.jpg");
+}
+
+.mac-birthday {
+  background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_30_years_2x.jpg");
+}
+
+.supplier-responsibility {
+  background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_supplier_responsibility_2x.jpg");
 }
