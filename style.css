@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -20,6 +26,8 @@ body {
   justify-content: center;
   color: white;
   font-weight: 100;
+  text-align: center;
+  padding-top: 10%;
 }
 
 .hero h1 {
@@ -30,13 +38,39 @@ body {
 
 .hero p {
   font-size: 30px;
-  width: 800px;
-  text-align: center;
+  max-width: 800px;
   padding-bottom: 30px;
+}
+
+nav li {
+  list-style: none;
+  text-align: center;
+  padding: 6px 10px;
+  cursor: pointer;
+  flex: 1;
+  width: 100px;
+  height: 100%;
+}
+
+nav ul :last-child {
+  flex: 1;
 }
 
 .hero :last-child {
   font-size: 23px;
+}
+
+nav :last-child:hover {
+  background: none;
+}
+
+nav li:first-child {
+  display: inline-block;
+  background-image: url("http://images.apple.com/global/nav/images/globalnav_text.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 30px;
+  border-radius: 3px 0 0 3px;
 }
 
 .hero :last-child:hover {
@@ -55,4 +89,52 @@ body {
   width: 35px;
   background-position: center;
   background-size: contain;
+}
+
+nav {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  background-image: linear-gradient(#8b8b8b, #5e5e5e, #747474);
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#search-input {
+  width: 100%;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(42, 42, 42, 0.5);
+  outline: none;
+}
+
+#search-input:focus {
+  background-color: white;
+}
+
+#search-logo {
+  position: absolute;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIj4KPGcgZmlsbC1vcGFjaXR5PSIuNSI%2BCgk8cG9seWdvbiBwb2ludHM9IjkuMjA3LDcuMTI2IDcuNzkzLDguNTQxIDExLjc5MywxMi41NDEgMTMuMjA3LDExLjEyNiIgLz4KCTxwYXRoIGQ9Ik01LjkxNywzYzEuNjA4LDAsMi45MTcsMS4zMDgsMi45MTcsMi45MTdTNy41MjUsOC44MzMsNS45MTcsOC44MzNTMyw3LjUyNSwzLDUuOTE3UzQuMzA4LDMsNS45MTcsMyBNNS45MTcsMQoJCUMzLjIwMSwxLDEsMy4yMDEsMSw1LjkxN3MyLjIwMSw0LjkxNyw0LjkxNyw0LjkxN3M0LjkxNy0yLjIwMSw0LjkxNy00LjkxN0MxMC44MzMsMy4yMDEsOC42MzIsMSw1LjkxNywxTDUuOTE3LDF6IiAvPgo8L2c%2BCjxnPgoJPHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSI5LjIwNyw2LjEyNiA3Ljc5Myw3LjU0MSAxMS43OTMsMTEuNTQxIDEzLjIwNywxMC4xMjYiIC8%2BCgk8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNS45MTcsMmMxLjYwOCwwLDIuOTE3LDEuMzA4LDIuOTE3LDIuOTE3UzcuNTI1LDcuODMzLDUuOTE3LDcuODMzUzMsNi41MjUsMyw0LjkxN1M0LjMwOCwyLDUuOTE3LDIKCQkgTTUuOTE3LDBDMy4yMDEsMCwxLDIuMjAxLDEsNC45MTdzMi4yMDEsNC45MTcsNC45MTcsNC45MTdzNC45MTctMi4yMDEsNC45MTctNC45MTdDMTAuODMzLDIuMjAxLDguNjMyLDAsNS45MTcsMEw1LjkxNywweiIgLz4KPC9nPgo8L3N2Zz4K");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 5px;
+}
+
+nav ul form {
+  position: relative;
 }
