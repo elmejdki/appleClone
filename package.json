@@ -1,0 +1,24 @@
+{
+  "name": "appleClone",
+  "version": "1.0.0",
+  "description": ">  This is a basic clone of an old apple welcome page. which I managed to clone it using pure HTML and CSS, and I named it appleClone.",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmejdki/appleClone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmejdki/appleClone/issues"
+  },
+  "homepage": "https://github.com/elmejdki/appleClone#readme",
+  "devDependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
