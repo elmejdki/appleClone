@@ -42,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-a big hat to me and my partner Paul and anyone who help us either by openning issues on this repository or reviewing our code :)
+a big hat to me and anyone who help us either by openning issues on this repository or reviewing our code :)
 
 ## 📝 License
 
